@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade17</title>
+</head>
+<body>
+    <link rel="stylesheet" href="../css/atividade17.css">
+
+    <div>
+     <form action="#">
+    <h1>Atividade17</h1>
+    <p>Digite seu nome e sua idade:</p>
+
+    <label for="">Nome:</label>
+    <input type="text" name="" id="nome">
+    <label for="">Idade:</label>
+    <input type="number" name="" id="idade">
+    
+    <button onclick="mostrar()">Mostrar</button>
+
+    <p id="resultado"></p>
+    </form>
+    </div>
+    <script>
+
+        function mostrar(){
+            let nome = document.getElementById("nome").value;
+        
+            let idade = document.getElementById("idade").value;
+        
+         document.getElementById("resultado").innerHTML = " Olá "+nome+" Seja Bem-Vindo, Você tem "+idade+" anos. ";
+        }
+
+         
+
+    </script>
+
+</body>
+</html>
